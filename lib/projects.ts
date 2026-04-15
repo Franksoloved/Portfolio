@@ -82,7 +82,7 @@ export const projects: Project[] = [
     tagColor: "#E8441C",
     tags: ["Canva", "Procreate", "Social"],
     year: "2026",
-    coverImage: "/projects/forecasterly-motion/welcomes.png",
+    coverImage: "/projects/forecasterly-motion/cover.png",
     coverImagePosition: "center",
   },
   {
