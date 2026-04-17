@@ -115,7 +115,7 @@ export default function ForecasterlyCaseStudy() {
           <p className="text-xs uppercase tracking-[0.15em] text-[#787878]">Live prototype</p>
           <p className="text-xs text-[#BBBAAF]">Scroll and interact inside the frame</p>
         </div>
-        <PrototypeFrame src="http://localhost:5173" />
+        <PrototypeFrame src="/forecasterly-preview/" />
 
         {/* Back */}
         <div className="border-t border-[#E2DFD8] pt-10 mt-16">

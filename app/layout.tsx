@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: "Matilda Matsdotter, Digital Designer",
   description:
     "Portfolio of Matilda Matsdotter, digital designer specialising in UI/UX, visual design, and information design.",
+  icons: {
+    icon: "/logga.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

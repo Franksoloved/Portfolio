@@ -65,18 +65,20 @@ export default function About() {
 
             <motion.p {...up(0.1)} className="text-[#787878] text-base leading-relaxed mb-4">
               I&apos;m Matilda, a digital designer with a bachelor&apos;s degree from Kristianstad
-              University, where I studied the intersection of people, technology, and design. My
-              education combines informatics and design science, giving me a strong foundation in
-              both user-centred design and technical understanding. I also studied human geography
-              at Stockholm University.
+              University, where I studied the intersection of people, technology, and design. Most
+              recently I worked with Forecasterly, an AI-native financial planning platform, where
+              I designed their full website in Figma and built it with Claude Code, as well as
+              producing motion graphics and brand assets. Before that, I worked with SOWE, a
+              Swedish nonprofit supporting women and girls in Uganda, creating print materials,
+              social media content, and an advent calendar campaign as part of a three-person
+              design team.
             </motion.p>
 
             <motion.p {...up(0.15)} className="text-[#787878] text-base leading-relaxed mb-10">
-              Before design, I spent eight years in leadership roles across the restaurant industry
-              in Sweden and Australia, managing teams of 10 to 20 people at Chapterhouse Coffee
-              and Shuk in Sydney and Melbourne, and as café manager at Fru Marias Bak in Sweden.
-              That work built a strong foundation in leadership, problem-solving, and reading what
-              people need before they say it. Skills I now bring directly into my design practice.
+              Before design, I spent eight years in leadership roles in the restaurant industry
+              in Sweden and Australia. That background gave me a strong foundation in
+              problem-solving and understanding what people need, skills I bring directly
+              into my design practice.
             </motion.p>
 
             {/* Compact education */}
