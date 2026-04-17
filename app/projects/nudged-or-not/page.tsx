@@ -50,6 +50,17 @@ export default function NudgedOrNotPage() {
           Nudged or Not
         </h1>
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-12">
+          <Image
+            src="/projects/nudged-or-not/cover.png"
+            alt="Nudged or Not"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <p className="text-[#787878] text-lg leading-relaxed max-w-2xl mb-12">
           Together with two other designers, I explored the concept of digital nudging in a project that resulted in a manifest for responsible digital design. The work examines the boundary between guidance and manipulation, and proposes seven principles for ethical digital nudging, covering freedom of choice, transparency, placement, visual signalling, and the balance between business goals and user value.
         </p>

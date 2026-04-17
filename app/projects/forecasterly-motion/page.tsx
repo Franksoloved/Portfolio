@@ -43,6 +43,17 @@ export default function ForecasterlyMotionPage() {
           Forecasterly:<br />Motion & Brand
         </h1>
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-10">
+          <Image
+            src="/projects/forecasterly-motion/cover.png"
+            alt="Forecasterly Motion & Brand"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         {/* Overview */}
         <div className="grid md:grid-cols-[1fr_2fr] gap-10 mb-14 pb-14 border-b border-[#E2DFD8]">
           <dl className="space-y-5">

@@ -44,6 +44,17 @@ export default function ElinVictorPage() {
           Elin & Victor
         </h1>
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-14">
+          <Image
+            src="/projects/elin-victor/cover.png"
+            alt="Elin & Victor wedding identity"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         {/* Overview */}
         <div className="grid md:grid-cols-2 gap-8 mb-14">
           <div className="space-y-4 text-[#787878] text-base leading-relaxed">

@@ -53,6 +53,17 @@ export default function InsightHirePage() {
           InsightHire
         </h1>
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-12">
+          <Image
+            src="/projects/insighthire/cover.png"
+            alt="InsightHire recruitment UX"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <p className="text-[#787878] text-base leading-relaxed">
             A concept for a recruitment website aimed at matching individuals&apos; skills with relevant jobs. The design focuses on creating a smooth user journey from account creation to job search, minimising the number of steps and making the interface intuitive.

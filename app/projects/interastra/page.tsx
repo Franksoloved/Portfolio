@@ -38,8 +38,21 @@ export default function InterAstraCaseStudy() {
         </Link>
       </div>
 
+      {/* Cover image */}
+      <div className="max-w-5xl mx-auto px-6 md:px-10 pt-14">
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-14">
+          <Image
+            src="/projects/interastra/cover.png"
+            alt="InterAstra AR Game Design"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+      </div>
+
       {/* Hero */}
-      <header className="max-w-5xl mx-auto px-6 md:px-10 pt-14 pb-12 border-b border-[#E2DFD8]">
+      <header className="max-w-5xl mx-auto px-6 md:px-10 pb-12 border-b border-[#E2DFD8]">
         <p className="text-xs uppercase tracking-[0.15em] text-[#E8441C] mb-3">UI/UX · Pervasive Gaming · AR</p>
         <h1 className="font-display text-4xl md:text-6xl font-bold text-[#0F0F0F] leading-tight mb-4">
           InterAstra

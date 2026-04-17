@@ -81,10 +81,42 @@ export default function SoweCaseStudy() {
 
       <article className="max-w-5xl mx-auto px-6 md:px-10 py-16 space-y-20">
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden">
+          <Image
+            src="/projects/sowe/cover.png"
+            alt="SOWE design work"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         {/* Intro */}
         <p className="text-[#0F0F0F] text-lg leading-relaxed max-w-2xl">
           As part of a three-person design team, I worked with SOWE to create visual material for their Instagram and donation campaigns. The work ranged from feed posts and stories to donation certificates, each piece shaped around clear audience targeting and the organisation's mission to support women and girls in Uganda.
         </p>
+
+        {/* Results */}
+        <section>
+          <p className="text-xs uppercase tracking-[0.15em] text-[#787878] mb-10">Results</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#E2DFD8]">
+            {[
+              { value: "88 000",   label: "Total views"              },
+              { value: "73%",      label: "Non-follower reach"       },
+              { value: "5 558",    label: "Accounts reached"         },
+              { value: "40 000 kr",label: "Donations raised"         },
+            ].map(({ value, label }) => (
+              <div key={label} className="bg-[#F8F7F4] p-6 md:p-8">
+                <p className="font-display font-bold text-3xl md:text-4xl text-[#0F0F0F] mb-1">{value}</p>
+                <p className="text-xs text-[#787878]">{label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-[#4A4A4A] text-sm leading-relaxed mt-6 max-w-xl">
+            The campaign ran 30 November to 29 December. Content reached over 5 500 accounts, with nearly three quarters being non-followers, expanding SOWE's audience well beyond its existing community. It drove 40 000 kr in donations and also converted a number of one-time donors into monthly recurring supporters.
+          </p>
+        </section>
 
         {/* Process */}
         <section>
@@ -148,26 +180,6 @@ export default function SoweCaseStudy() {
           </div>
         </section>
 
-        {/* Impact */}
-        <section>
-          <p className="text-xs uppercase tracking-[0.15em] text-[#787878] mb-10">Results</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#E2DFD8]">
-            {[
-              { value: "88 000",   label: "Total views"              },
-              { value: "73%",      label: "Non-follower reach"       },
-              { value: "5 558",    label: "Accounts reached"         },
-              { value: "40 000 kr",label: "Donations raised"         },
-            ].map(({ value, label }) => (
-              <div key={label} className="bg-[#F8F7F4] p-6 md:p-8">
-                <p className="font-display font-bold text-3xl md:text-4xl text-[#0F0F0F] mb-1">{value}</p>
-                <p className="text-xs text-[#787878]">{label}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-[#4A4A4A] text-sm leading-relaxed mt-6 max-w-xl">
-            The campaign ran 30 November to 29 December. Content reached over 5 500 accounts, with nearly three quarters being non-followers, expanding SOWE's audience well beyond its existing community. It drove 40 000 kr in donations and also converted a number of one-time donors into monthly recurring supporters.
-          </p>
-        </section>
 
       </article>
 
