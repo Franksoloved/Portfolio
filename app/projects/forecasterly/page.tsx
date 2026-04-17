@@ -3,6 +3,7 @@
 ─────────────────────────────────────────────────────────────────────────── */
 
 import Link           from "next/link";
+import Image          from "next/image";
 import PrototypeFrame from "@/components/PrototypeFrame";
 
 export const metadata = {
@@ -96,6 +97,17 @@ export default function ForecasterlyCaseStudy() {
           </div>
         </div>
 
+        {/* Cover image */}
+        <div className="relative w-full aspect-[16/9] overflow-hidden mb-16">
+          <Image
+            src="/projects/forecasterly/cover.png"
+            alt="Forecasterly website"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 800px"
+          />
+        </div>
+
         {/* Process */}
         <p className="text-xs uppercase tracking-[0.15em] text-[#787878] mb-8">Process</p>
         <ol className="divide-y divide-[#E2DFD8] border-t border-[#E2DFD8] mb-16">
@@ -115,7 +127,7 @@ export default function ForecasterlyCaseStudy() {
           <p className="text-xs uppercase tracking-[0.15em] text-[#787878]">Live prototype</p>
           <p className="text-xs text-[#BBBAAF]">Scroll and interact inside the frame</p>
         </div>
-        <PrototypeFrame src="/forecasterly-preview/" />
+        <PrototypeFrame src="/forecasterly-preview/index.html" />
 
         {/* Back */}
         <div className="border-t border-[#E2DFD8] pt-10 mt-16">
