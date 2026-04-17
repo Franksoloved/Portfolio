@@ -125,9 +125,19 @@ export default function ForecasterlyCaseStudy() {
         {/* Live prototype */}
         <div className="flex items-baseline justify-between mb-3">
           <p className="text-xs uppercase tracking-[0.15em] text-[#787878]">Live prototype</p>
-          <p className="text-xs text-[#BBBAAF]">Scroll and interact inside the frame</p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://forecasterly.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#787878] hover:text-[#E8441C] transition-colors underline underline-offset-4"
+            >
+              Visit forecasterly.com
+            </a>
+            <p className="text-xs text-[#BBBAAF]">Scroll and interact inside the frame</p>
+          </div>
         </div>
-        <PrototypeFrame src="/forecasterly-preview/index.html" />
+        <PrototypeFrame src="https://forecasterly-preview.vercel.app" />
 
         {/* Back */}
         <div className="border-t border-[#E2DFD8] pt-10 mt-16">
