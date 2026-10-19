@@ -74,7 +74,16 @@ export default function About() {
               design team.
             </motion.p>
 
-            <motion.p {...up(0.15)} className="text-[#787878] text-base leading-relaxed mb-10">
+            <motion.p {...up(0.15)} className="text-[#787878] text-base leading-relaxed mb-4">
+              My bachelor&apos;s research was also published as a conference paper and presented at
+              WAIE 2026 in Sapporo, Japan, where it received two awards: Certificate of Best
+              Student Paper and Certificate of Best Presentation. The paper introduces MOSAIC, a
+              framework that reframes generative AI as a learning partner in academic writing rather
+              than a ghostwriter, designed with the Swedish principle of <em>lagom</em>, just
+              enough, in mind.
+            </motion.p>
+
+            <motion.p {...up(0.2)} className="text-[#787878] text-base leading-relaxed mb-10">
               Before design, I spent eight years in leadership roles in the restaurant industry
               in Sweden and Australia. That background gave me a strong foundation in
               problem-solving and understanding what people need, skills I bring directly
@@ -82,7 +91,7 @@ export default function About() {
             </motion.p>
 
             {/* Compact education */}
-            <motion.div {...up(0.2)}>
+            <motion.div {...up(0.25)}>
               <p className="text-xs tracking-[0.15em] uppercase text-[#787878] mb-4">Education</p>
               <ul className="space-y-0" aria-label="Education">
                 {education.map(({ period, degree, institution }) => (
@@ -96,6 +105,30 @@ export default function About() {
                 ))}
               </ul>
             </motion.div>
+
+            <motion.div {...up(0.3)} className="mt-8">
+              <p className="text-xs tracking-[0.15em] uppercase text-[#787878] mb-4">Recognition</p>
+              <p className="text-sm font-medium text-[#0F0F0F] leading-snug mb-0.5">
+                The MOSAIC Framework: Tangible Interaction Design for Meaningful Student-AI Collaboration in Academic Writing
+              </p>
+              <p className="text-xs text-[#787878] mb-4">
+                Co-authored with Jamilya Jakobsson, Victor Villavicencio, Montathar Faraon & Kari Rönkkö, Kristianstad University.
+              </p>
+              <ul className="space-y-0" aria-label="Recognition">
+                {[
+                  { date: "Sep 2026", title: "Certificate of Best Student Paper", venue: "WAIE 2026, Sapporo, Japan" },
+                  { date: "Sep 2026", title: "Certificate of Best Presentation", venue: "WAIE 2026 & ICMIS 2026, Sapporo, Japan" },
+                ].map(({ date, title, venue }) => (
+                  <li key={title} className="flex items-start justify-between gap-6 border-t border-[#E2DFD8] py-3 last:border-b">
+                    <div>
+                      <p className="text-sm font-medium text-[#0F0F0F]">{title}</p>
+                      <p className="text-xs text-[#787878]">{venue}</p>
+                    </div>
+                    <span className="text-xs text-[#E8441C] tabular-nums shrink-0 mt-0.5">{date}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           </div>
 
           {/* Right */}
@@ -104,11 +137,12 @@ export default function About() {
             {/* Portrait */}
             <motion.div {...up(0.1)} className="relative w-full aspect-[3/4] bg-[#F0EEE9] overflow-hidden">
               <Image
-                src="/matilda.JPG"
+                src="/matilda-new.jpg"
                 alt="Matilda Matsdotter"
                 fill
-                className="object-cover object-top scale-x-[-1]"
+                className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                quality={90}
                 priority
               />
             </motion.div>

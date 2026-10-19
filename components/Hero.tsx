@@ -22,7 +22,7 @@ export default function Hero() {
           className="text-xs tracking-[0.2em] uppercase text-[#787878] flex items-center gap-3"
           style={{ animation: "fadeUp 0.5s ease forwards", animationDelay: "0.05s", opacity: 0 }}
         >
-          <span className="inline-block w-2 h-2 rounded-full bg-[#E8441C]" aria-hidden="true" />
+          <span className="inline-block w-2 h-2 rounded-full bg-[#22C55E]" aria-hidden="true" />
           Available for new projects
         </p>
 
